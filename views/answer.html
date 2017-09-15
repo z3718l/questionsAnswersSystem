@@ -1,0 +1,15 @@
+{{include 'share/header'}}
+{{include 'share/navbar'}}
+<div class="container">
+    <form data-id = "{{id}}">
+        <div class="form-group textarea-font">
+            <textarea class="form-control" rows="8" name="answer" required maxlength="140"></textarea>
+            <span>140/140</span>
+        </div>
+        
+        <button class="btn btn-success form-control">回答问题</button>
+    </form>
+</div>
+<script src="/js/answer.js"></script>
+{{include 'share/modal'}}
+{{include 'share/footer'}}

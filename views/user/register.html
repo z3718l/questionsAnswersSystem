@@ -1,0 +1,45 @@
+{{include '../share/header'}}
+{{include '../share/navbar'}}
+<div class="container">
+    <form action="/a">
+        <div class="input-group form-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input type="text" name="username" required autocomplete="off" class="form-control" placeholder="请输入2-16位的用户名" pattern="[\u4e00-\u9fa5\w]{2,16}">
+        </div>
+        <div class="input-group form-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <input type="password" class="form-control" name="password" required autocomplete="off" placeholder="请输入6-16位的密码" pattern="^[\w]{6,16}$">
+        </div>
+        <div class="input-group form-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <input type="password" class="form-control" name="repassword" required autocomplete="off" placeholder="请再次输入密码" pattern="^[\w]{6,16}$">
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="isMale" value="true"> 男
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="isMale" value="false"> 女
+            </label>
+        </div>
+        <div class="input-group form-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+            <input type="email" class="form-control" name="email" required autocomplete="off" placeholder="请输入邮件地址">
+        </div>
+        <div class="form-group">
+            <select name="course" class="form-control">
+                <option value="HTML5">HTML5</option>
+                <option value="CSS3">CSS3</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="jQuery">jQuery</option>
+                <option value="Node.js">Node.js</option>
+            </select>
+        </div>
+        <button class="btn btn-success form-control">注册 </button>
+    </form>
+</div>
+<script src="js/register.js"></script>
+{{include '../share/modal'}}
+{{include '../share/footer'}}

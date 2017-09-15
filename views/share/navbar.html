@@ -1,0 +1,42 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container dropdown">
+            {{if back}}
+            <div class="navbar-login">
+                <span id="goBack" class="pull-left">
+                   <span class="glyphicon glyphicon-chevron-left"></span>
+                </span>
+                {{title}}
+                <span id="register" class="pull-right normal">
+                    <span class="glyphicon glyphicon-plus-sign"></span>
+                    <span>注册</span>
+                </span>&#x3000;
+                <span id="user" data-toggle="dropdown" class="pull-right normal">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <span>登录</span>
+                </span>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="/user" class="text-right">个人资料</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="text-right">退出</a></li>
+                </ul>
+            </div>
+            {{else}}
+            <a href="/" class="navbar-brand">智游教育</a>
+            <div class="navbar-text navbar-right navbar-title">
+                <span id="ask">
+                    <span class="glyphicon glyphicon-question-sign"></span>
+                    <span>提问</span>
+                </span>&#x3000;
+                <span id="user" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <span>登录</span>
+                </span>
+                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                    <li><a href="/user" class="text-right">个人资料</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" class="text-right">退出</a></li>
+                </ul>
+            </div>
+            {{/if}}
+        </div>
+    </nav>

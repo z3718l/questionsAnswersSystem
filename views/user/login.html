@@ -1,0 +1,18 @@
+{{include '../share/header'}}
+{{include '../share/navbar'}}
+<div class="container">
+        <form action="/a">
+            <div class="input-group form-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input type="text" name="username" required autocomplete="off" class="form-control" placeholder="请输入用户名" pattern="[\u4e00-\u9fa5\w]{2,16}">
+            </div>
+            <div class="input-group form-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input type="password" class="form-control" name="password" required autocomplete="off"placeholder="请输入密码" pattern="^[\w]{6,16}$">
+            </div>
+            <button class="btn btn-success form-control">登录</button>
+        </form>
+</div>
+<script src="js/login.js"></script>
+{{include '../share/modal'}}
+{{include '../share/footer'}}
